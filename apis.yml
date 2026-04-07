@@ -1,7 +1,12 @@
 aid: cablevision-systems
-url: https://raw.githubusercontent.com/api-evangelist/cablevision-systems/refs/heads/main/apis.yml
+url: 
+  https://raw.githubusercontent.com/api-evangelist/cablevision-systems/refs/heads/main/apis.yml
 modified: '2026-03-23'
 apis: []
 common:
   - type: Website
     url: https://www.cablevision-systems.com
+description: >-
+  Cablevision Systems was a U.S. cable television company that provided telecommunications
+  and television services in the New York metropolitan area before being acquired
+  by Altice.
