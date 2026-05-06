@@ -1,134 +1,65 @@
 specification: FinOps Framework
 specificationVersion: '1.0'
+schema: https://www.finops.org/framework/
+provider: Cablevision Systems
+providerId: cablevision-systems
+created: '2026-05-04'
+modified: '2026-05-05'
+reconciled: false
+tags:
+  - Telecommunications
+  - Cable
+  - Internet
+  - FinOps
+  - FOCUS
+description: FOCUS-aligned FinOps scaffold for Cablevision Systems. The provider does not publish a metered
+  developer API or chargeable API surface, so this artifact captures the corporate publisher and service
+  category for cataloging purposes only — there are no API meters, FOCUS columns are minimal, and consumers
+  should treat this as a placeholder.
+sources:
+  - https://www.alticeusa.com/
+  - https://www.optimum.com/
+  - https://focus.finops.org/focus-specification/v1-3/
 alignedWith:
   framework: FinOps Foundation Framework
   frameworkUrl: https://www.finops.org/framework/
   dataSpec: FOCUS
   dataSpecVersion: '1.3'
   dataSpecUrl: https://focus.finops.org/focus-specification/v1-3/
-provider: Cablevision Systems
-providerId: cablevision-systems
-publisherName: Cablevision Systems
-serviceCategory: API
-created: '2026-05-04'
-modified: '2026-05-04'
-tags:
-  - Telecommunications
-  - Cable
-  - Internet
-  - Television
-  - Altice USA
-  - Optimum
-  - Company
-  - FinOps
-  - Cost Management
-  - FOCUS
-description: FinOps framework definition for the Cablevision Systems API surface. Provides a FOCUS-aligned
-  mapping for cost allocation, usage measurement, and unit-economics reporting across the provider's APIs.
-principles:
-  - name: Visibility
-    description: Make API consumption costs visible to engineering, product, and finance teams in near
-      real-time.
-  - name: Allocation
-    description: Tag every chargeable API call with the consuming team, environment, application, and
-      feature so cost can be allocated.
-  - name: Optimization
-    description: Continuously evaluate request patterns, caching, batching, and tier selection to reduce
-      cost per useful unit of work.
-  - name: Accountability
-    description: Establish budget owners and chargeback or showback flows for each consuming team.
-domains:
-  - name: Understand Usage and Cost
-    capabilities:
-      - Data Ingestion
-      - Allocation
-      - Reporting and Analytics
-      - Anomaly Management
-  - name: Quantify Business Value
-    capabilities:
-      - Planning and Estimating
-      - Forecasting
-      - Budgeting
-      - Benchmarking
-      - Unit Economics
-  - name: Optimize Usage and Cost
-    capabilities:
-      - Architecting for Cloud
-      - Rate Optimization
-      - Workload Optimization
-      - Cloud Sustainability
-      - Licensing and SaaS
-  - name: Manage the FinOps Practice
-    capabilities:
-      - FinOps Practice Operations
-      - FinOps Education and Enablement
-      - Invoicing and Chargeback
-      - Onboarding Workloads
-      - Intersecting Disciplines
+publisherName: Altice USA, Inc.
+serviceCategory: Telecommunications / Cable ISP
 billingModel:
-  pricingCategory: Usage-Based
-  billingFrequency: Monthly
+  pricingCategory: Not Applicable
+  billingFrequency: Not Applicable
   billingCurrency: USD
-  chargeCategories:
-    - Usage
-    - Purchase
-    - Tax
-    - Credit
-    - Adjustment
-  chargeFrequency: Recurring
+  chargeCategories: []
 focusColumns:
   ServiceName: Cablevision Systems
-  ServiceCategory: Developer Tools / API
+  ServiceCategory: Telecommunications / Cable ISP
   ProviderName: Cablevision Systems
-  PublisherName: Cablevision Systems
-  InvoiceIssuerName: Cablevision Systems
-  PricingCategory: Usage-Based
-  PricingUnit: request
+  PublisherName: Altice USA, Inc.
+  InvoiceIssuerName: Altice USA, Inc.
   BillingCurrency: USD
-  ChargeCategory: Usage
-meters:
-  - name: api_requests
-    description: Count of billable API requests
-    unit: request
-    aggregation: sum
-    dimensions:
-      - api
-      - endpoint
-      - tier
-      - region
-      - consumer
-  - name: data_egress
-    description: Bytes returned over the network in API responses
-    unit: GB
-    aggregation: sum
-    dimensions:
-      - api
-      - region
-      - consumer
-  - name: compute_seconds
-    description: Server-side compute consumed by the request, where applicable
-    unit: second
-    aggregation: sum
-    dimensions:
-      - api
-      - endpoint
-      - tier
-apis:
-  - name: Cablevision Systems (now Optimum / Altice USA)
-    baseURL: ''
-    tags:
-      - Cable
-      - Telecommunications
-      - Internet
-    serviceName: Cablevision Systems (now Optimum / Altice USA)
-    serviceCategory: API
-unitEconomics:
-  - name: Cost per 1K Requests
-    metric: billed_cost / (api_requests / 1000)
-    target: TBD
-  - name: Cost per Active Consumer
-    metric: billed_cost / active_consumers
-    target: TBD
+meters: []
+notes: |
+  Cablevision Systems was acquired by Altice and now operates as part of Altice USA under the Optimum
+  brand. It does not publish a public, general-purpose developer API or developer pricing. Consumer
+  broadband, TV, and voice services are sold via standard residential / business pricing schedules;
+  B2B integrations are governed by private contracts.
+principles:
+  - name: Visibility
+    description: No API spend to make visible because no public API is published. Procurement / facilities / IT
+      visibility for this entity is handled through standard vendor-management tooling, not a developer-cost surface.
+  - name: Allocation
+    description: Not applicable to API consumption. Corporate spend allocation is handled by the publisher's
+      standard accounting and cost-center processes.
+  - name: Optimization
+    description: Not applicable to API consumption. Standard procurement-side optimization (contract negotiation,
+      consolidated buying) applies if the entity is engaged commercially.
+  - name: Accountability
+    description: Not applicable to API consumption. Corporate accountability is governed by the publisher's
+      enterprise procurement and finance functions.
 maintainers:
-  - FN: Kin Lane
-    email: kin@apievangelist.com
+  - FN: API Evangelist
+    url: http://apievangelist.com
+    email: info@apievangelist.com
