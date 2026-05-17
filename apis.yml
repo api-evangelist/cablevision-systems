@@ -11,7 +11,7 @@ tags:
   - Optimum
   - Company
 type: Index
-x-type: company
+kind: company
 image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
 access: 3rd-Party
 created: '2026-03-23'
@@ -57,7 +57,7 @@ common:
     url: https://www.alticeusa.com/news
   - type: Careers
     url: https://www.alticeusa.com/careers
-  - type: Privacy Policy
+  - type: PrivacyPolicy
     url: https://www.alticeusa.com/privacy-policy
 maintainers:
   - FN: Kin Lane
