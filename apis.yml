@@ -48,6 +48,8 @@ apis:
       documented; corporate, investor, and consumer support properties
       are published online.
 common:
+  - type: DomainSecurity
+    url: security/cablevision-systems-domain-security.yml
   - type: Website
     url: https://www.alticeusa.com
   - type: Consumer Brand
