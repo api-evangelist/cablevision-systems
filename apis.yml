@@ -13,10 +13,22 @@ tags:
   - Fortune 500
 type: Index
 kind: company
-image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+accessModel:
+  pricing: paid
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Paid
+  confidence: medium
+  source:
+    - finops
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/cablevision-systems.png
 access: 3rd-Party
 created: '2026-03-23'
-modified: '2026-04-23'
+modified: '2026-07-25'
 position: Consumer
 description: >-
   Cablevision Systems was a U.S. cable television company that provided
@@ -24,29 +36,7 @@ description: >-
   Optimum Voice) in the New York metropolitan area. It was acquired by
   Altice in 2016 and now operates as part of Altice USA under the Optimum
   consumer brand.
-apis:
-  - aid: cablevision-systems:cablevision-optimum
-    name: Cablevision Systems (now Optimum / Altice USA)
-    tags:
-      - Cable
-      - Telecommunications
-      - Internet
-    humanURL: https://www.alticeusa.com
-    properties:
-      - type: Website
-        url: https://www.alticeusa.com
-      - type: Consumer Brand
-        url: https://www.optimum.com
-      - type: Investor Relations
-        url: https://www.alticeusa.com/investors
-      - type: Newsroom
-        url: https://www.alticeusa.com/news
-    description: >-
-      Cablevision Systems' operations continue under Altice USA and its
-      Optimum consumer brand, providing cable television, broadband
-      internet, and voice services. No public developer API is currently
-      documented; corporate, investor, and consumer support properties
-      are published online.
+apis: []
 common:
   - type: DomainSecurity
     url: security/cablevision-systems-domain-security.yml

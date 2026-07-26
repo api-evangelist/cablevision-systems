@@ -27,10 +27,6 @@ Cablevision Systems was a U.S. cable television company that provided telecommun
 
 ## APIs
 
-### Cablevision Systems (now Optimum / Altice USA)
-Operations continue under Altice USA and the Optimum consumer brand. No public developer API is currently documented.
-
-**Human URL:** [https://www.alticeusa.com](https://www.alticeusa.com)
 
 ## Common Properties
 
