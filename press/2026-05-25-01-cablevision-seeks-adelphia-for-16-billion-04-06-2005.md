@@ -1,7 +1,9 @@
 ---
 title: Cablevision Seeks Adelphia for $16 Billion 04/06/2005
 url: https://www.mediapost.com/publications/article/28973/cablevision-seeks-adelphia-for-16-billion.html
-date: '2026-05-25'
+published: ''
+date_basis: harvested
+harvested: '2026-05-25'
 query: '"Cablevision Systems" press release artificial intelligence'
 position: 1
 source: serpapi-google

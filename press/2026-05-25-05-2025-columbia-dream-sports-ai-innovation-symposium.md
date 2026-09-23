@@ -1,7 +1,9 @@
 ---
 title: 2025 Columbia-Dream Sports AI Innovation Symposium
 url: https://www.newswise.com/articles/2025-columbia-dream-sports-ai-innovation-symposium
-date: '2026-05-25'
+published: ''
+date_basis: harvested
+harvested: '2026-05-25'
 query: '"Cablevision Systems" press release artificial intelligence'
 position: 5
 source: serpapi-google
